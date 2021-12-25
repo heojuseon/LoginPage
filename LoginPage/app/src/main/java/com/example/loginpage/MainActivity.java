@@ -2,13 +2,30 @@ package com.example.loginpage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.image3_page);
+        setContentView(R.layout.activity_main);
+
+        Button backbtn = (Button)findViewById(R.id.back);
+
+        Intent intent = getIntent();
+
+
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = getIntent();
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
     }
 }

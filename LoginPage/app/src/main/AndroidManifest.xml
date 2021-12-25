@@ -14,8 +14,13 @@
         android:largeHeap="true" > <!--      용량이 큰 사진을 사용할때등 오류가 날 경우 사용하는 코드-->
 
         <activity
-
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
