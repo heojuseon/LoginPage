@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button backbtn = (Button)findViewById(R.id.back);
 
-        Intent intent = getIntent();
-
 
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
